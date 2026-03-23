@@ -9,4 +9,4 @@ jobs:
         with:
           node-version: 18
       - run: npm install
-      - run: npx mocha
+      - run: node node_modules/mocha/bin/mocha
