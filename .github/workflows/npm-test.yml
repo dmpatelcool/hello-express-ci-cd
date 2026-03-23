@@ -1,7 +1,5 @@
 name: npm test
-
 on: [push]
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -15,5 +13,4 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
       - run: npm install
-      - run: npm run build --if-present
       - run: npm test
